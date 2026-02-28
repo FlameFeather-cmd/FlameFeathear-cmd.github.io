@@ -53,7 +53,7 @@
 <body class="bg-base-white dark:bg-gray-900 font-sans text-gray-700 dark:text-gray-300 flex flex-col min-h-screen transition-colors duration-300" x-data="{ mobileMenuOpen: false }" :class="{'menu-open': mobileMenuOpen}">
 
 <div x-data="{ html: '' }" 
-     x-init="fetch('./../components/navbar.html').then(r => r.text()).then(t => html = t)" 
+     x-init="fetch('../components/navbar.html').then(r => r.text()).then(t => html = t)" 
      x-html="html">
      </div>
 
@@ -203,7 +203,7 @@
 </main>
 
 <div x-data="{ html: '' }" 
-     x-init="fetch('./../components/footer.html').then(r => r.text()).then(t => html = t)" 
+     x-init="fetch('../components/footer.html').then(r => r.text()).then(t => html = t)" 
      x-html="html">
      </div>
 
